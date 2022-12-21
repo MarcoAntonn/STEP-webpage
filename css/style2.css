@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400;1,500;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*? ------------------HEADER--------------- */
+
+header {
+    background-color: rgba(255, 255, 255, 0.754);
+    position: sticky;
+    /* top: 0; */
+    width: 100%;
+    height: 90px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+    padding: 0;
+    margin: 0 0 0 50px;
+    top: 0;
+    position: relative;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header ul li {
+    display: inline-block;
+    /*Hace que la lista sea horizontal*/
+    margin-right: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #3F3F3F;
+    font-family: Roboto;
+    justify-content: center;
+    /* text-transform: uppercase; */
+}
+
+
+/* ------------------- BODY --------------------- */
+
+.carrussel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/1_homeImgs/mainCoverImg.JPG");
+    width: 100%;
+    /* height: 100%; */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*cubre el ancho o alto */
+    background-attachment: fixed;
+    /*pone fija la imagen*/
+    display: flex;
+    justify-content: start;
+    /*mueve la caja al centro de la seccion(en horizontal)*/
+    align-items: center;
+    /*mueve la caja al centro de la seccion(en vertical)*/
+    font-size: 40px;
+    /* position: absolute; */
+    /* top: 0; */
+}
+
+.carrussel div {
+    margin: 0 0 0 50px;
+}
+
+.carrussel div h1 {
+    /* position: absolute; */
+    color: white;
+    font-family: Roboto;
+    font-size: 100px;
+}
+
+.carrussel section div h1 {
+    color: white;
+    font-family: Roboto;
+}
+
+.carrussel div p {
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.carrussel span {
+    /* font-style: italic; */
+    font-size: 30px;
+}
+
+.button {
+    background-color: rgb(0, 222, 9);
+    font-family: Roboto;
+    text-decoration: none;
+    padding: 15px 30px 15px 30px;
+    margin: 30px 0 15px 0px;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    /* position: absolute; */
+    font-size: 20px;
+}
+
+.whatIsStep {
+    width: 100%;
+    height: 100%;
+    grid-area: whatIsStep;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.whatIsStep img {
+    height: 700px;
+    width: 500px;
+    object-fit: cover;
+    padding: 50px;
+}
+
+#whatIsStepInfo {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 50px 0 50px;
+}
+
+#whatIsStepInfo h2 {
+    display: flex;
+    font-family: Roboto;
+    font-size: 50px;
+}
+
+#whatIsStepInfo p {
+    font-family: Roboto;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.feelThePower {
+    grid-area: feelThePower;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/1_homeImgs/walkingInMarch.JPG);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*cubre el ancho o alto */
+    background-attachment: fixed;
+    /*pone fija la imagen*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feelThePower h3 {
+    font-family: Roboto;
+    font-size: 40px;
+    color: white;
+}
+
+.feelThePower h1 {
+    font-family: Roboto;
+    font-size: 100px;
+    color: white;
+}
+
+.feelThePower p {
+    font-family: Roboto;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* #special_button {
+position: relative;
+} */
+
+.gallery_option {
+    width: 100%;
+    height: 100%;
+    grid-area: gallery_option;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery_option img {
+    height: 600px;
+    width: 560px;
+    object-fit: cover;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.gallery_option h2 {
+    font-family: Roboto;
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+
+/*? ------------------- ABOUT US ------------- */
+
+
+/* .general-grid-au {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 40%;
+    font-family: 'Roboto';
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 900px 900px 900px 550px;
+    grid-area: "aboutUsPrincipal" "essence" "founders" "footerOfficial";
+} */
+
+.aboutUsPrincipal {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.162), rgba(0, 0, 0, 0.5)), url("../img/2_aboutUsImgs/miniEcoBottle.JPG");
+    /* width: 100%; */
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.aboutUsPrincipal h1 {
+    font-family: Roboto;
+    font-size: 250px;
+    /* font-size: 100%; */
+    color: white;
+}
+
+.aboutUsPrincipal h5 {
+    font-family: 'Roboto';
+    font-size: 40px;
+}
+
+.aboutUsPrincipal p {
+    font-family: 'Roboto';
+    font-size: 15px;
+}
+
+.essence {
+    width: 100%;
+    height: 100vh;
+    grid-area: essence;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.essence_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.essence_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.essence img {
+    height: 150px;
+    width: 180px;
+    object-fit: cover;
+}
+
+.essence h5 {
+    font-family: 'Roboto';
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.essence h2 {
+    font-family: 'Roboto';
+    font-size: 100px;
+}
+
+.founders {
+    width: 100%;
+    height: 100vh;
+    grid-area: founders;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.founders h2 {
+    font-family: 'Roboto';
+    font-size: 100px;
+}
+
+.foundersDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: space-evenly;
+}
+
+.founderNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.founderNav img {
+    height: 280px;
+    width: 200px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.founderNav h5 {
+    font-family: 'Roboto';
+    font-size: 30px;
+}
+
+.founderInfo img {
+    height: 30px;
+    width: 30px;
+    margin: 4px;
+    /* object-fit: cover; */
+}
+
+
+/*? ------------------ OUR SUCCESS -------------- */
+
+.ourSuccessPrincipal {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 180px 0 0 100px;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5)), url("../img/3_ourSuccessImgs/playeraYRecolectado.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.ourSuccessPrincipal h1 {
+    font-family: 'Roboto';
+    text-align: left;
+    font-size: 150px;
+    color: white;
+}
+
+.syccessMenu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.successMenuSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.successMenuSection img {
+    width: 50%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.successMenuText {
+    display: flex;
+    flex-direction: column;
+    margin: 80px;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Roboto;
+}
+
+.successMenuText h2 {
+    font-size: 70px;
+    margin-bottom: 50px;
+}
+
+.successMenuText h2 {
+    font-size: 50px;
+}
+
+.gallery_option2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery_option2 h2 {
+    font-family: Roboto;
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+
+
+/*? ----------------- OUR GOALS ---------------- */
+
+.ourGoalsPrincipal {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 180px 0 0 100px;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.5)), url("../img/4_ourGoalsImgs/bigEcoBottle.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.ourGoalsPrincipal h1 {
+    font-family: 'Roboto';
+    text-align: left;
+    font-size: 150px;
+    color: white;
+}
+
+.goalsMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goalsMenuSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 20px;
+    padding: 50px;
+}
+
+.goalsMenuSection h4 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+
+/* .goalsMenuSection img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+} */
+
+.goalsMenuText {
+    margin: 20px;
+}
+
+.galleryPrincipal h1 {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 150px;
+    color: white;
+}
+
+.imagesGalleryGrid {
+    margin: 20px 0 20px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 200px);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item1 {
+    grid-row: 1 / 4;
+    grid-column: 1 / 3;
+}
+
+.item2 {
+    grid-row: 1 / 2;
+    grid-column: 3 / 5;
+}
+
+.item3 {
+    grid-row: 1 / 3;
+    grid-column: 5 / 6;
+}
+
+.item4 {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+}
+
+.item5 {
+    grid-column: 1 / 2;
+    grid-row: 4 / 6;
+}
+
+.item6 {
+    grid-column: 4 / 6;
+    grid-row: 4 / 7;
+}
+
+.item7 {
+    grid-column: 1 / 2;
+    grid-row: 6 / 8;
+}
+
+.item8 {
+    grid-column: 2 / 4;
+    grid-row: 5 / 7;
+}
+
+.item9 {
+    grid-column: 3 / 5;
+    grid-row: 7 / 8;
+}
+
+
+/*? ------------------ GALLERY --------------- */
+
+.galleryPrincipal {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 180px 0 0 100px;
+    top: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.073), rgba(0, 0, 0, 0.5)), url("../img/5_galleryImgs/stepTalk.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+
+/*? ------------------ FOOTER ---------------- */
+
+.footer {
+    height: 50vh;
+    width: 100%;
+    grid-area: footer1;
+    background-color: rgb(28, 28, 28);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer h4 {
+    color: white;
+    font-family: Roboto;
+    font-size: 35px;
+    margin: 20px;
+}
+
+.footer img {
+    height: 150px;
+    width: 150px;
+}
+
+.footer a {
+    text-decoration: none;
+    font-family: Roboto;
+    color: white;
+    font-size: 20px;
+    margin: 0 20px 0 0;
+}
+
+.footerFounders {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerNetwork {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerLinks img {
+    width: 50px;
+    height: 50px;
+    margin: 0 20px 0 20px;
+}
+
+
+/*!--------MEDIA QUERIE------- */
+
+@media screen and (max-width: 950px) {
+    .carrussel div h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .carrussel div h1 {
+        font-size: 50px;
+    }
+}
