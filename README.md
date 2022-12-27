@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Marco Lopez</h1>
 <h3 align="center">A passionate frontend developer from Mexico</h3>
 
-- 🔭 I’m currently working on [STEP webpage](https://github.com/MarcoAntonn/STEP-webpage.git)
+- 🔭 I’m currently working on [STEP webpage](https://marcoantonn.github.io/STEP-webpage/)
 
 - 🌱 I’m currently learning **HTML, CSS, and JavaScript**
 
