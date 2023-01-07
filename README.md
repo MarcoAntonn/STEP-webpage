@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Marco Lopez</h1>
 <h3 align="center">A passionate frontend developer from Mexico</h3>
 
-- 🔭 I’m currently working on [STEP webpage](https://github.com/MarcoAntonn/STEP-webpage.git)
+- 🔭 I’m currently working on [STEP webpage](https://marcoantonn.github.io/STEP-webpage/)
 
 - 🌱 I’m currently learning **HTML, CSS, and JavaScript**
 
@@ -10,6 +10,8 @@
 - 🤝 I’m looking for help with **UX/ UI, HTML, CSS projects**
 
 - 👨‍💻 Figma design: [https://www.figma.com/file/tN4nVBCdm1A5GioPExLa6A/STEP-web?node-id=542%3A462&t=ilnx3PgMJ45oZol4-1](https://www.figma.com/file/tN4nVBCdm1A5GioPExLa6A/STEP-web?node-id=542%3A462&t=ilnx3PgMJ45oZol4-1)
+
+- 📹 My YouTube channel [https://www.youtube.com/channel/UC3vGctg61euGTFEPMGQX2Ow](https://www.youtube.com/channel/UC3vGctg61euGTFEPMGQX2Ow)
 
 - 💬 Ask me about **entrepreneurship and UX/UI design**
 
@@ -20,7 +22,6 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://instagram.com/marco_antonn" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="marco_antonn" height="30" width="40" /></a>
-<a href="https://www.youtube.com/c/@marco_antonn" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="@marco_antonn" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
