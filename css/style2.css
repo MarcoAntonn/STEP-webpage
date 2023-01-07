@@ -9,21 +9,25 @@
 /*? ------------------HEADER--------------- */
 
 header {
-    background-color: rgba(255, 255, 255, 0.754);
-    position: sticky;
-    /* top: 0; */
     width: 100%;
-    height: 90px;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 100px;
     z-index: 1;
     position: fixed;
 }
 
-header img {
-    height: 100px;
+.menu_header {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+header nav {
+    background-color: rgba(255, 255, 255, 0.754);
+}
+
+.logo {
+    height: 60px;
     width: auto;
     padding: 0;
     margin: 0 0 0 50px;
@@ -31,21 +35,7 @@ header img {
     position: relative;
 }
 
-header ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-header ul li {
-    display: inline-block;
-    /*Hace que la lista sea horizontal*/
-    margin-right: 10px;
-}
-
-header ul li a {
+.list_item_header {
     text-decoration: none;
     color: #3F3F3F;
     font-family: Roboto;
@@ -53,17 +43,16 @@ header ul li a {
     transition: 0.5s;
 }
 
-header ul li a:hover {
+.nav-link:hover {
     color: rgb(0, 226, 8);
 }
 
 
-/* ------------------- BODY --------------------- */
+/*? ------------------- BODY --------------------- */
 
 .carrussel {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/1_homeImgs/mainCoverImg.JPG");
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,15 +68,23 @@ header ul li a:hover {
     font-size: 40px;
 }
 
-.carrussel div {
-    margin: 0 0 0 50px;
+.img_carrussel {
+    object-fit: cover;
+}
+
+.carrussel_content {
+    height: 100vh;
+    text-align: start;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    left: 10%;
 }
 
 .carrussel div h1 {
-    /* position: absolute; */
     color: white;
     font-family: Roboto;
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .carrussel section div h1 {
@@ -103,7 +100,6 @@ header ul li a:hover {
 }
 
 .carrussel span {
-    /* font-style: italic; */
     font-size: 30px;
 }
 
@@ -116,18 +112,17 @@ header ul li a:hover {
     text-align: center;
     border-radius: 50px;
     color: white;
-    /* position: absolute; */
     font-size: 20px;
 }
 
 .button:hover {
-    background-color: rgb(0, 200, 7);
+    background-color: rgb(25, 237, 32);
+    color: white;
 }
 
 .whatIsStep {
     width: 100%;
-    height: 100%;
-    grid-area: whatIsStep;
+    /* height: 100%; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -141,7 +136,7 @@ header ul li a:hover {
     padding: 50px;
 }
 
-#whatIsStepInfo {
+.whatIsStepInfo {
     width: 550px;
     display: flex;
     flex-direction: column;
@@ -150,20 +145,19 @@ header ul li a:hover {
     padding: 0 50px 0 50px;
 }
 
-#whatIsStepInfo h2 {
+.whatIsStepInfo h2 {
     display: flex;
     font-family: Roboto;
     font-size: 50px;
 }
 
-#whatIsStepInfo p {
+.whatIsStepInfo p {
     font-family: Roboto;
     font-size: 20px;
     margin-bottom: 50px;
 }
 
 .feelThePower {
-    grid-area: feelThePower;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/1_homeImgs/walkingInMarch.JPG);
     width: 100%;
     height: 100vh;
@@ -202,11 +196,11 @@ header ul li a:hover {
 .gallery_option {
     width: 100%;
     height: 100%;
-    grid-area: gallery_option;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-top: 50px;
 }
 
 .gallery_option img {
@@ -228,7 +222,6 @@ header ul li a:hover {
 
 .aboutUsPrincipal {
     background-image: linear-gradient(rgba(0, 0, 0, 0.162), rgba(0, 0, 0, 0.5)), url("../img/2_aboutUsImgs/miniEcoBottle.JPG");
-    /* width: 100%; */
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -245,7 +238,6 @@ header ul li a:hover {
 .aboutUsPrincipal h1 {
     font-family: Roboto;
     font-size: 250px;
-    /* font-size: 100%; */
     color: white;
 }
 
@@ -261,18 +253,9 @@ header ul li a:hover {
 
 .essence {
     width: 100%;
-    height: 100vh;
-    grid-area: essence;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.essence_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -303,31 +286,12 @@ header ul li a:hover {
 
 .founders {
     width: 100%;
-    height: 100vh;
-    grid-area: founders;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .founders h2 {
     font-family: 'Roboto';
     font-size: 100px;
-}
-
-.foundersDiv {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: space-evenly;
-}
-
-.founderNav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .founderNav img {
@@ -346,7 +310,15 @@ header ul li a:hover {
     height: 30px;
     width: 30px;
     margin: 4px;
-    /* object-fit: cover; */
+    transition: 0.5s;
+}
+
+.founderInfo {
+    margin-bottom: 30px;
+}
+
+.founderInfo img:hover {
+    transform: scale(1.1);
 }
 
 
@@ -373,7 +345,7 @@ header ul li a:hover {
     color: white;
 }
 
-.syccessMenu {
+.successMenu {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -385,12 +357,13 @@ header ul li a:hover {
 }
 
 .successMenuSection img {
-    width: 50%;
+    width: 70%;
     height: 100vh;
     object-fit: cover;
 }
 
 .successMenuText {
+    width: 50%;
     display: flex;
     flex-direction: column;
     margin: 80px;
@@ -400,12 +373,8 @@ header ul li a:hover {
 }
 
 .successMenuText h2 {
-    font-size: 70px;
-    margin-bottom: 50px;
-}
-
-.successMenuText h2 {
     font-size: 50px;
+    margin-bottom: 50px;
 }
 
 .gallery_option2 {
@@ -482,7 +451,7 @@ header ul li a:hover {
     width: 100%;
     height: 100vh;
     margin: 0;
-    padding: 180px 0 0 100px;
+    padding: 180px 0 0 0;
     top: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.073), rgba(0, 0, 0, 0.5)), url("../img/5_galleryImgs/stepTalk.JPG");
     background-position: center;
@@ -618,7 +587,6 @@ header ul li a:hover {
 .footer {
     height: 50vh;
     width: 100%;
-    grid-area: footer1;
     background-color: rgb(28, 28, 28);
     display: flex;
     flex-direction: row;
@@ -636,6 +604,7 @@ header ul li a:hover {
 .footer img {
     height: 150px;
     width: 150px;
+    object-fit: cover;
 }
 
 .footer a {
@@ -676,19 +645,279 @@ header ul li a:hover {
     width: 50px;
     height: 50px;
     margin: 0 20px 0 20px;
+    transition: 0.5s;
+}
+
+.footerLinks img:hover {
+    transform: scale(1.1);
 }
 
 
-/*!--------MEDIA QUERIE------- */
+/*!--------MEDIA QUERIES------- */
 
 @media screen and (max-width: 950px) {
+    .carrussel {
+        height: 100vh;
+    }
+    .carrussel_content {
+        justify-content: center;
+        text-align: center;
+    }
+    .img_carrussel {
+        height: 100vh;
+    }
+    .whatIsStep {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .whatIsStepInfo {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
     .carrussel div h1 {
         font-size: 70px;
+    }
+    .gallery_option {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery_option div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .successMenuSection {
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        /* text-align: center; */
+    }
+    .successMenuSection img {
+        margin-bottom: 30px;
+    }
+    .successMenuText {
+        text-align: center;
+        align-items: center;
+    }
+    .rev {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer {
+        height: 100vh;
+        flex-direction: column;
+    }
+    .ourSuccessPrincipal h1 {
+        font-size: 100px;
+    }
+    .goalsMenuSection {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .aboutUsPrincipal h1 {
+        font-size: 150px;
+    }
+    .aboutUsPrincipal h5 {
+        font-size: 30px;
+    }
+    .aboutUsPrincipal p {
+        margin: 0 10% 0 10%;
+    }
+    .imagesGalleryGrid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(11, 200px);
+    }
+    .item1 {
+        grid-row: 1 / 3;
+        grid-column: 1 / 2;
+    }
+    .item2 {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+    }
+    .itemX1 {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+    }
+    .item3 {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+    }
+    .itemX2 {
+        grid-row: 3 / 4;
+        grid-column: 1 / 2;
+    }
+    .item4 {
+        grid-row: 3 / 5;
+        grid-column: 2 / 3;
+    }
+    .item5 {
+        grid-row: 5 / 7;
+        grid-column: 1 / 2;
+    }
+    .itemX3 {
+        grid-row: 5 / 6;
+        grid-column: 2 / 3;
+    }
+    .itemX4 {
+        grid-row: 6 / 7;
+        grid-column: 2 / 3;
+    }
+    .itemX5 {
+        grid-row: 7 / 8;
+        grid-column: 1 / 2;
+    }
+    .item6 {
+        grid-row: 7 / 9;
+        grid-column: 2 / 3;
+    }
+    .item7 {
+        grid-row: 9 / 11;
+        grid-column: 1 / 2;
+    }
+    .item8 {
+        grid-row: 8 / 9;
+        grid-column: 1 / 2;
+    }
+    .itemX6 {
+        grid-row: 9 / 10;
+        grid-column: 2 / 3;
+    }
+    .item9 {
+        grid-row: 11 / 12;
+        grid-column: 1 / 3;
+    }
+    .itemX7 {
+        grid-row: 10 / 11;
+        grid-column: 2 / 3;
     }
 }
 
 @media screen and (max-width: 600px) {
+    .gallery_option div {
+        margin-bottom: 20%;
+    }
+    .gallery_option img {
+        height: 400px;
+        width: 350px;
+    }
+    .gallery_option h2 {
+        font-size: 55px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .ourGoalsPrincipal h1 {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ourSuccessPrincipal {
+        padding: 180px 0 0 35px;
+    }
+    .ourSuccessPrincipal h1 {
+        font-size: 70px;
+    }
+    .goalsMenuSection img {
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+    }
+    .galleryPrincipal h1 {
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 450px) {
     .carrussel div h1 {
         font-size: 50px;
     }
+    .button {
+        font-size: 15px;
+        padding: 10px 50px 10px 50px;
+        /* margin: 30px 0 15px 0px; */
+    }
+    .whatIsStep img {
+        height: 500px;
+        width: 350px;
+    }
+    .whatIsStepInfo h2 {
+        font-size: 30px;
+    }
+    .whatIsStepInfo p {
+        font-size: 15px;
+        margin: 0 20% 0 20%;
+    }
+    .aboutUsPrincipal h1 {
+        font-size: 100px;
+    }
+    .aboutUsPrincipal h5 {
+        font-size: 20px;
+    }
+    .aboutUsPrincipal p {
+        font-size: 10px;
+        margin: 0 10% 0 10%;
+    }
+    .feelThePower h3 {
+        font-size: 30px;
+    }
+    .feelThePower h1 {
+        font-size: 80px;
+    }
+    .feelThePower p {
+        font-size: 15px;
+    }
+    .essence h2 {
+        font-size: 65px;
+    }
+    .essence h5 {
+        font-size: 20px;
+    }
+    .founders h2 {
+        font-size: 65px;
+    }
+    .founderNav h5 {
+        font-size: 25px;
+    }
 }
+
+@media screen and (max-width: 400px) {
+    .ourGoalsPrincipal {
+        padding-left: 50px;
+    }
+    .ourGoalsPrincipal h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .successMenuText h2 {
+        font-size: 30px;
+    }
+    .successMenuText p {
+        font-size: 15px;
+    }
+    .gallery_option2 h2 {
+        font-size: 50px;
+    }
+}
+
+
+/* @media screen {
+    
+} */
