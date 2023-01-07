@@ -224,7 +224,6 @@ header nav {
     background-image: linear-gradient(rgba(0, 0, 0, 0.162), rgba(0, 0, 0, 0.5)), url("../img/2_aboutUsImgs/miniEcoBottle.JPG");
     height: 100vh;
     width: 100%;
-    object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -904,6 +903,9 @@ header nav {
     }
     .ourGoalsPrincipal h1 {
         font-size: 80px;
+    }
+    .logo {
+        margin: 0 0 0 20px;
     }
 }
 
